@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "logsimply"
+version = "0.1.0"
+description = "Tiny logging helper class with sensible defaults."
+readme = "README.md"
+requires-python = ">=3.10.12"
+license = { text = "MIT" }  # or use "file = 'LICENSE'"
+authors = [
+  { name = "Felix Maldonado", email = "famaldonadoos@gmail.com" }
+]
+keywords = ["logging", "utilities"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+dependencies = [
+  # add runtime deps here, e.g. "rich>=13"
+]
+
+[project.urls]
+Homepage = "https://github.com/yourname/logsimply"
+Issues = "https://github.com/yourname/logsimply/issues"
+
+# Optional: expose a CLI `logsimply` command
+[project.scripts]
+logsimply = "logsimply.__main__:main"
